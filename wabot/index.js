@@ -88,10 +88,11 @@ async function startBot() {
     },
   });
 if (!sock.authState.creds.registered) {
-  setTimeout(async () => {
-    const code = await sock.requestPairingCode(process.env.BOT_NUMBER);
-    console.log("Pairing Code:", code);
-  }, 3000);
+  await new Promise(resolve => setTimeout(resolve, 5000));
+  const code = await sock.requestPairingCode(process.env.BOT_NUMBER);
+  console.log("=== PAIRING CODE ===");
+  console.log(code);
+  console.log("===================");
 }
  
   sock.ev.on("creds.update", saveCreds);
