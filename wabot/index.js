@@ -82,14 +82,13 @@ async function startBot() {
     auth: state,
     printQRInTerminal: true,
     logger: pino({ level: "silent" }),
-    browser: ["Kamran Hasil Bot", "Chrome", "20.0.0"],
+    browser: ["Wasif Rind Bot", "Chrome", "20.0.0"],
     getMessage: async (key) => {
-      const msg = store.messages[key.remoteJid]?.get(key.id);
-      return msg?.message || undefined;
+      return undefined;
     },
   });
 
-  store.bind(sock.ev);
+ 
   sock.ev.on("creds.update", saveCreds);
 
   sock.ev.on("connection.update", ({ connection, lastDisconnect }) => {
