@@ -87,7 +87,10 @@ async function startBot() {
       return undefined;
     },
   });
-
+if (!sock.authState.creds.registered) {
+  const code = await sock.requestPairingCode(process.env.BOT_NUMBER);
+  console.log("Pairing Code:", code);
+}
  
   sock.ev.on("creds.update", saveCreds);
 
