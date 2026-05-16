@@ -10,7 +10,7 @@ const {
   useMultiFileAuthState,
   DisconnectReason,
   fetchLatestBaileysVersion,
-  makeInMemoryStore,
+  
   downloadMediaMessage,
   getContentType,
 } = require("@whiskeysockets/baileys");
@@ -31,9 +31,7 @@ server.listen(config.port, () =>
   console.log(chalk.green(`[SERVER] Port ${config.port}`))
 );
 
-const store = makeInMemoryStore({
-  logger: pino().child({ level: "silent", stream: "store" }),
-});
+
 
 // Load plugins (array or single export)
 const pluginFiles = fs.readdirSync("./plugins").filter((f) => f.endsWith(".js"));
