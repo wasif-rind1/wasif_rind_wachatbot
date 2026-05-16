@@ -160,7 +160,7 @@ async function startBot() {
         await plugin.execute({
           sock, msg, from, sender, args, text, body, isGroup, isAdmin, isBotAdmin,
           isOwner: isOwner(sender), isSudo: isSudo(sender),
-          pushName, vars, sudoList, config, plugins, store, downloadMediaMessage,
+          pushName, vars, sudoList, config, plugins,  downloadMediaMessage,
         });
       } catch (err) {
         console.error(chalk.red("[ERR]"), err.message);
