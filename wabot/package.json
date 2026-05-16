@@ -1,0 +1,32 @@
+{
+  "name": "wasif-rind-wabot",
+  "version": "1.0.0",
+  "description": "Full WhatsApp MD Bot – 84 Plugins",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "axios": "^1.6.0",
+    "chalk": "^4.1.2",
+    "ffmpeg-static": "^5.2.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs-extra": "^11.1.1",
+    "gtts": "^0.1.1",
+    "node-cache": "^5.1.2",
+    "pino": "^8.16.0",
+    "qrcode-terminal": "^0.12.0",
+    "sharp": "^0.32.6",
+    "ytdl-core": "^4.11.5",
+    "yt-search": "^2.10.4",
+    "node-fetch": "^2.7.0",
+    "jimp": "^0.22.10",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
