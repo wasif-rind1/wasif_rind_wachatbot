@@ -91,7 +91,11 @@ async function startBot() {
  
   sock.ev.on("creds.update", saveCreds);
 
-  sock.ev.on("connection.update", ({ connection, lastDisconnect }) => {
+  sock.ev.on("connection.update", ({ connection, lastDisconnect,qr }) => {
+  if (qr) {
+    const qrcode = require("qrcode-terminal");
+    qrcode.generate(qr, { small: true });
+  }
     if (connection === "close") {
       const code = lastDisconnect?.error?.output?.statusCode;
       const reconnect = code !== DisconnectReason.loggedOut;
