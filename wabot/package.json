@@ -9,7 +9,7 @@
     "dev": "nodemon index.js"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.7.9",
+    "@whiskeysockets/baileys": "^6.5.0",
     "axios": "^1.6.0",
     "chalk": "^4.1.2",
     "ffmpeg-static": "^5.2.0",
@@ -30,3 +30,6 @@
     "node": ">=18.0.0"
   }
 }
+"overrides": {
+  "uuid": "9.0.0"
+},
