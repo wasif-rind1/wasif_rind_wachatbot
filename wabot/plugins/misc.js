@@ -79,7 +79,7 @@ const repoPlugin = {
   description: "Bot source code",
   execute: async ({ sock, from }) => {
     await sock.sendMessage(from, {
-      text: `📦 *Bot Repository*\n\nhttps://github.com/your-username/kamran-hasil-wabot\n\n_Star ⭐ if you like it!_`,
+      text: `📦 *Bot Repository*\n\nhttps://github.com/wasif-rind1/wasif_rind_wachatbot ⭐ if you like it!_`,
     });
   },
 };
@@ -90,7 +90,7 @@ const wamePlugin = {
   description: "Get WhatsApp link",
   execute: async ({ sock, from, args }) => {
     const number = args[0]?.replace(/[^0-9]/g, "");
-    if (!number) return sock.sendMessage(from, { text: "Usage: .wame 923001234567" });
+    if (!number) return sock.sendMessage(from, { text: "Usage: .wame 923272516116" });
     await sock.sendMessage(from, { text: `🔗 https://wa.me/${number}` });
   },
 };
@@ -100,7 +100,7 @@ const scPlugin = {
   command: "sc",
   description: "Source code",
   execute: async ({ sock, from }) => {
-    await sock.sendMessage(from, { text: `💻 *Source Code:*\nhttps://github.com/your-username/kamran-hasil-wabot` });
+    await sock.sendMessage(from, { text: `💻 *Source Code:*\nhttps://github.com/wasif-rind1/wasif_rind_wachatbot` });
   },
 };
 
@@ -110,7 +110,7 @@ const sparkyPlugin = {
   description: "Bot info",
   execute: async ({ sock, from }) => {
     await sock.sendMessage(from, {
-      text: `⚡ *Sparky – Kamran Hasil Bot*\n\n• Version: 1.0.0\n• Plugins: 84+\n• Library: Baileys\n• Platform: Render/Railway\n\nType *.menu* to see all commands!`,
+      text: `⚡ *Sparky – Wasif Rind Bot*\n\n• Version: 1.0.0\n• Plugins: 84+\n• Library: Baileys\n• Platform: Render/Railway\n\nType *.menu* to see all commands!`,
     });
   },
 };
