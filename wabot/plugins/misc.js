@@ -120,7 +120,7 @@ const pairPlugin = {
   command: "pair",
   description: "Pair bot with number",
   execute: async ({ sock, from, args }) => {
-    if (!args[0]) return sock.sendMessage(from, { text: "Usage: .pair 923001234567" });
+    if (!args[0]) return sock.sendMessage(from, { text: "Usage: .pair 923272516116" });
     await sock.sendMessage(from, { text: `✅ Use this number to pair: *${args[0]}*\nScan QR or use pairing code from terminal.` });
   },
 };
