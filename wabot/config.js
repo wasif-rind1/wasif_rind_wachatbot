@@ -6,7 +6,7 @@ module.exports = {
   // Bot Info
   botName: "Wasif Rind Bot",
   prefix: ".",
-  ownerNumber: ["923272516116@s.whatsapp.net","923368907055@s.whatsapp.net"], // Apna number daalo with country code, no +
+  ownerNumber: ["923272516116@s.whatsapp.net","55955588968535@lid"], // Apna number daalo with country code, no +
 
   // Mode: "private" (sirf owner) | "public" (sab)
   mode: "public",
